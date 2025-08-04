@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="HTML5 content enhancement and form validation demonstration page" />
+  <meta name="author" content="Your Name" />
+  <title>Enhanced HTML5 Content & Forms</title>
+</head>
+<body>
+
+  <header>
+    <h1>HTML5 Advanced Content & Form Demo</h1>
+    <p>Explore HTML5 features including structured content and advanced form handling.</p>
+  </header>
+
+  <main>
+
+    <!-- Section: Lists -->
+    <section>
+      <h2>Popular Web Technologies</h2>
+
+      <h3>Frontend Technologies (Ordered List)</h3>
+      <ol>
+        <li>HTML5</li>
+        <li>CSS3</li>
+        <li>JavaScript</li>
+      </ol>
+
+      <h3>Backend Technologies (Unordered List)</h3>
+      <ul>
+        <li>Node.js</li>
+        <li>Python</li>
+        <li>PHP</li>
+      </ul>
+
+      <h3>Definition List</h3>
+      <dl>
+        <dt>HTML</dt>
+        <dd>A markup language for creating web pages.</dd>
+        <dt>CSS</dt>
+        <dd>Used for styling HTML content.</dd>
+        <dt>JavaScript</dt>
+        <dd>Enables interactive features on web pages.</dd>
+      </dl>
+    </section>
+
+    <!-- Section: Table -->
+    <section>
+      <h2>Web Development Roadmap</h2>
+      <table border="1">
+        <caption>Learning Stages</caption>
+        <thead>
+          <tr>
+            <th>Stage</th>
+            <th>Technologies</th>
+            <th>Duration</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Beginner</td>
+            <td>HTML, CSS</td>
+            <td>2 Months</td>
+          </tr>
+          <tr>
+            <td>Intermediate</td>
+            <td>JavaScript, Git</td>
+            <td>3 Months</td>
+          </tr>
+          <tr>
+            <td>Advanced</td>
+            <td>React, Node.js</td>
+            <td>4 Months</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- Section: Media -->
+    <section>
+      <h2>Embedded Media</h2>
+
+      <h3>Sample Image</h3>
+      <img src="https://via.placeholder.com/300x200" alt="Placeholder Image of Code" width="300" height="200"/>
+
+      <h3>Sample Video</h3>
+      <video width="320" height="240" controls>
+        <source src="sample.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+
+      <h3>Sample Audio</h3>
+      <audio controls>
+        <source src="sample.mp3" type="audio/mpeg" />
+        Your browser does not support the audio element.
+      </audio>
+    </section>
+
+    <!-- Section: Form -->
+    <section>
+      <h2>Registration Form</h2>
+      <form action="#" method="post">
+
+        <fieldset>
+          <legend>Personal Information</legend>
+
+          <label for="fullname">Full Name:</label>
+          <input type="text" id="fullname" name="fullname" placeholder="John Doe" required minlength="3" /><br /><br />
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" placeholder="example@mail.com" required autocomplete="email" /><br /><br />
+
+          <label for="age">Age:</label>
+          <input type="number" id="age" name="age" min="18" max="100" required /><br /><br />
+
+          <label for="birthdate">Birthdate:</label>
+          <input type="date" id="birthdate" name="birthdate" required /><br /><br />
+        </fieldset>
+
+        <fieldset>
+          <legend>Account Details</legend>
+
+          <label for="username">Username:</label>
+          <input type="text" id="username" name="username" required pattern="^[a-zA-Z0-9]{5,12}$" title="5-12 characters, letters or numbers only"/><br /><br />
+
+          <label for="password">Password:</label>
+          <input type="password" id="password" name="password" required minlength="6" autocomplete="new-password" /><br /><br />
+
+          <label for="gender">Gender:</label><br />
+          <input type="radio" id="male" name="gender" value="male" required />
+          <label for="male">Male</label><br />
+          <input type="radio" id="female" name="gender" value="female" />
+          <label for="female">Female</label><br /><br />
+
+          <label for="country">Country:</label>
+          <select id="country" name="country" required>
+            <option value="">Select your country</option>
+            <option value="kenya">Kenya</option>
+            <option value="uganda">Uganda</option>
+            <option value="tanzania">Tanzania</option>
+          </select><br /><br />
+        </fieldset>
+
+        <fieldset>
+          <legend>Preferences</legend>
+
+          <label><input type="checkbox" name="newsletter" value="yes" checked /> Subscribe to newsletter</label><br />
+          <label><input type="checkbox" name="updates" value="yes" /> Receive product updates</label><br /><br />
+        </fieldset>
+
+        <input type="submit" value="Register" />
+        <input type="reset" value="Clear" />
+
+      </form>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>&copy; 2025 HTML5 Web Dev Assignment | Designed by Your Name</p>
+  </footer>
+
+</body>
+</html>
